@@ -23,7 +23,7 @@ export default function Projects() {
     {
     image: websiteImg3,
     title: 'Smart Notes & Flashcards',
-    type: 'Web Application',
+    type: 'Web Application',  
     description:
       'Responsive React app to create, edit, search, and manage notes and flashcards with dark mode, tags, and local storage.',
     link: 'https://smartnotes-eta.vercel.app/',
