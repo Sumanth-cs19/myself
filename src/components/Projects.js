@@ -21,12 +21,12 @@ export default function Projects() {
       link: 'https://drive.google.com/drive/folders/1f5iS5FSmqdhW30wot7_S-ZCevELjR7f8',
     },
     {
-      image: websiteImg3,
-      title: 'Note Making App',
-      type: 'Web Application',
-      description:
-        'Lightweight browser note app with local storage, built using HTML, CSS, and JavaScript.',
-      link: 'https://github.com/Sumanth-cs19/Notemaking',
+    image: websiteImg3,
+    title: 'Smart Notes & Flashcards',
+    type: 'Web Application',
+    description:
+      'Responsive React app to create, edit, search, and manage notes and flashcards with dark mode, tags, and local storage.',
+    link: 'https://smartnotes-eta.vercel.app/',
     },
   ];
 
