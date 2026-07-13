@@ -1,6 +1,6 @@
-import websiteImg1 from '../assets/convo-pal.jpg';
-import websiteImg2 from '../assets/imageclassifier.png';
-import websiteImg3 from '../assets/note-making.jpg';
+import aiKnowledgeAssistantImg from '../assets/ai-knowledge-assistant.jpg';
+import objectClassifierImg from '../assets/imageclassifier.png';
+import smartNotesImg from '../assets/note-making.jpg';
 import { motion } from 'framer-motion';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
@@ -8,17 +8,33 @@ import { FiExternalLink } from 'react-icons/fi';
 export default function Projects() {
   const projects = [
     {
-      image: websiteImg1,
-      title: 'Convo-Pal',
-      type: 'Real-Time Chat Platform',
+      image: aiKnowledgeAssistantImg,
+      alt: 'AI Knowledge Assistant dashboard and document chat interface',
+      title: 'AI Knowledge Assistant',
+      type: 'Enterprise RAG Platform',
       description:
-        'Engineered a real-time collaborative chat platform with group messaging, in-app games, and secure user authentication. Designed a normalized MySQL schema for persistent message storage and session management.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      github: 'https://github.com/Sumanth-cs19',
-      live: null,
+        'Built and deployed an AI-powered enterprise knowledge assistant that allows users to upload PDF and DOCX files, indexes document content in PostgreSQL with pgvector, and answers questions using retrieval-augmented generation. The platform includes source-grounded responses, real-time SSE streaming, JWT authentication, role-based access control, document processing, conversation history, and admin analytics.',
+      tech: [
+        'ASP.NET Core',
+        'C#',
+        'Angular 21',
+        'TypeScript',
+        'PostgreSQL',
+        'pgvector',
+        'Groq',
+        'RAG',
+        'Docker',
+        'Neon',
+        'Render',
+        'Vercel',
+        'GitHub Actions',
+      ],
+      github: 'https://github.com/Sumanth-cs19/ai-knowledge-assistant',
+      live: 'https://ai-knowledge-assistant-seven.vercel.app/',
     },
     {
-      image: websiteImg2,
+      image: objectClassifierImg,
+      alt: 'Object Classifier',
       title: 'Object Classifier',
       type: 'AI-Powered Detection App',
       description:
@@ -28,7 +44,8 @@ export default function Projects() {
       live: null,
     },
     {
-      image: websiteImg3,
+      image: smartNotesImg,
+      alt: 'Smart Notes & Flashcards',
       title: 'Smart Notes & Flashcards',
       type: 'Productivity Web App',
       description:
@@ -65,7 +82,7 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}
@@ -79,7 +96,7 @@ export default function Projects() {
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.alt}
                   className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
@@ -116,7 +133,7 @@ export default function Projects() {
                       <a
                         href={project.github}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         aria-label={`${project.title} GitHub`}
                         className="hover:-translate-y-0.5 transition-all duration-300"
                         style={{ color: 'var(--text-muted)' }}
@@ -130,7 +147,7 @@ export default function Projects() {
                       <a
                         href={project.live}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         aria-label={`${project.title} Live Demo`}
                         className="hover:-translate-y-0.5 transition-all duration-300"
                         style={{ color: 'var(--text-muted)' }}
