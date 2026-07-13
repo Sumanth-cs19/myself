@@ -4,15 +4,28 @@ import { FiBriefcase, FiBookOpen, FiDownload } from 'react-icons/fi';
 export default function Resume() {
   const experience = [
     {
+      title: 'Packaged App Development Analyst',
+      company: 'Accenture',
+      period: 'Apr 2026 - Present',
+      location: 'Chennai, India',
+      points: [
+        'Developed scalable ASP.NET Core Web APIs using Clean Architecture.',
+        'Integrated OpenAI models into enterprise AI-assisted workflows.',
+        'Built console applications and Web APIs for AI interactions, data processing, and business logic.',
+        'Implemented secure authentication and authorization using JWT and Azure AD.',
+      ],
+    },
+    {
       title: 'Software Development Engineer II',
       company: 'Jio Platforms Limited',
-      period: 'Oct 2023 — Present',
+      period: 'Oct 2023 - Apr 2026',
       location: 'Navi Mumbai, India',
       points: [
-        'Refactored high-volume C# data automation pipeline using multithreading and concurrency, boosting throughput from 9 to 520 records/sec while ensuring reliability through comprehensive testing.',
-        'Built .NET Core microservice processing 500K+ daily user events (IP tracking, module actions, audit logs) with 50% higher audit accuracy, powering RESTful analytics APIs across 20+ modules.',
-        'Developed 3D geospatial visualization platform using Deck.GL/WebGL on Google Maps, reducing tile mapping response time by 64% (1.4s → 504ms) through custom Node.js-based grid GeoJSON server architecture.',
-        'Implemented custom .NET Core authorization filter framework securing 30+ modules with role-based access control for 100+ roles and 5M daily users, maintaining 100% security compliance with zero unauthorized access.',
+        'Improved a high-volume C# spatial-data pipeline from 9 to 520 records per second using multithreading and concurrency.',
+        'Developed secure .NET Core APIs with JWT authentication and RBAC.',
+        'Implemented Redis-based caching to improve data retrieval and API response time.',
+        'Optimized Oracle queries on large datasets using partitioning and composite indexes.',
+        'Built reusable authorization filters for enterprise modules and roles.',
       ],
     },
   ];
@@ -21,7 +34,7 @@ export default function Resume() {
     {
       degree: 'Bachelor of Engineering in Computer Science and Engineering',
       school: 'College of Engineering Guindy, Anna University',
-      period: '2019 — 2023',
+      period: '2019 - 2023',
       location: 'Chennai, India',
       details: 'CGPA: 8.39/10.0',
       coursework:
@@ -98,7 +111,7 @@ export default function Resume() {
                       className="text-sm font-mono mb-4"
                       style={{ color: 'var(--text-muted)' }}
                     >
-                      {exp.period} · {exp.location}
+                      {exp.period} - {exp.location}
                     </p>
                     <ul className="space-y-3">
                       {exp.points.map((point, i) => (
@@ -166,7 +179,7 @@ export default function Resume() {
                       {edu.school}
                     </p>
                     <p className="text-sm font-mono mb-3" style={{ color: 'var(--text-muted)' }}>
-                      {edu.period} · {edu.location}
+                      {edu.period} - {edu.location}
                     </p>
                     <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>
                       {edu.details}

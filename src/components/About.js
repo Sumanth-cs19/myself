@@ -3,11 +3,24 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   const skills = {
-    Languages: ['C#', 'JavaScript', 'Java', 'C++', 'HTML5', 'CSS3'],
-    Frameworks: ['ASP.NET Core', 'ASP.NET MVC', 'Entity Framework', 'LINQ', 'React.js', 'Deck.GL'],
-    Databases: ['Oracle', 'PL/SQL', 'MySQL', 'PostgreSQL', 'SQL Server', 'Redis'],
-    DevOps: ['Git', 'Azure DevOps', 'CI/CD Pipelines', 'Postman', 'Apache NiFi'],
-    Architecture: ['Microservices', 'System Design', 'RabbitMQ', 'JWT Auth', 'Design Patterns', 'SOLID'],
+    Languages: ['C#', 'Java', 'Python', 'SQL', 'JavaScript', 'TypeScript'],
+    Backend: ['ASP.NET Core', 'Web API', 'Entity Framework Core', 'LINQ', 'ADO.NET', 'REST APIs'],
+    Frontend: ['Angular', 'React', 'HTML', 'CSS'],
+    AI: ['OpenAI APIs', 'Azure OpenAI', 'RAG', 'Embeddings', 'Semantic Search', 'Server-Sent Events'],
+    Databases: ['PostgreSQL', 'pgvector', 'Oracle', 'SQL Server', 'PL/SQL', 'Redis'],
+    'Cloud and DevOps': ['Microsoft Azure', 'Azure DevOps', 'Docker', 'CI/CD', 'Git', 'GitHub Actions', 'Postman'],
+    'Architecture and Security': [
+      'Clean Architecture',
+      'Microservices',
+      'JWT',
+      'Azure AD',
+      'RBAC',
+      'SOLID Principles',
+      'Design Patterns',
+      'Multithreading',
+      'Concurrency',
+    ],
+    Testing: ['xUnit', 'NUnit', 'Unit Testing', 'Code Reviews', 'Debugging'],
   };
 
   return (
@@ -43,25 +56,18 @@ export default function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              Hello! I'm{' '}
-              <span className="font-semibold" style={{ color: 'var(--accent)' }}>
-                Konduru Sumanth Varma
-              </span>
-              , a passionate Full Stack .NET Developer with 2 years of experience building
-              scalable web applications. I specialize in microservices architecture, performance
-              optimization, and cloud deployment on Azure.
+              I am a Software Engineer with around 3 years of experience in backend development,
+              enterprise API design, performance optimization, and AI-enabled application
+              development.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              As a Software Development Engineer II at Jio Platforms Limited, I've delivered
-              real-time analytics systems and enterprise security frameworks, consistently focusing
-              on clean code, design patterns, and agile methodologies.
+              My core expertise includes C#, ASP.NET Core, REST APIs, Clean Architecture,
+              PostgreSQL, Oracle, Redis, Azure, Angular, JWT, Azure AD, and role-based access
+              control.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              I thrive in cross-functional teams, contributing to robust backend systems with{' '}
-              <span style={{ color: 'var(--accent)' }}>.NET Core</span> and{' '}
-              <span style={{ color: 'var(--accent)' }}>Oracle PL/SQL</span>, and crafting
-              intuitive frontend experiences using{' '}
-              <span style={{ color: 'var(--accent)' }}>React.js</span>.
+              I currently work on GenAI-driven enterprise solutions, integrating OpenAI models,
+              orchestrating AI workflows, and building secure and maintainable backend services.
             </p>
 
             {/* Currently Learning Badge */}
@@ -84,9 +90,9 @@ export default function About() {
               </span>
               <span className="text-sm font-mono" style={{ color: 'var(--text-muted)' }}>
                 Currently exploring:{' '}
-                <span style={{ color: 'var(--accent)' }}>System Design</span>,{' '}
-                <span style={{ color: 'var(--accent-secondary)' }}>AWS</span>, &{' '}
-                <span style={{ color: 'var(--accent)' }}>Docker</span>
+                <span style={{ color: 'var(--accent)' }}>GenAI</span>,{' '}
+                <span style={{ color: 'var(--accent-secondary)' }}>RAG</span>, &{' '}
+                <span style={{ color: 'var(--accent)' }}>Cloud</span>
               </span>
             </motion.div>
 

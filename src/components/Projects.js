@@ -13,12 +13,10 @@ export default function Projects() {
       title: 'AI Knowledge Assistant',
       type: 'Enterprise RAG Platform',
       description:
-        'Built and deployed an AI-powered enterprise knowledge assistant that allows users to upload PDF and DOCX files, indexes document content in PostgreSQL with pgvector, and answers questions using retrieval-augmented generation. The platform includes source-grounded responses, real-time SSE streaming, JWT authentication, role-based access control, document processing, conversation history, and admin analytics.',
+        'Built and deployed an AI-powered knowledge assistant that supports PDF and DOCX upload, document indexing, semantic search, retrieval-augmented generation, streaming responses, source citations, JWT authentication, RBAC, conversation history, and admin features.',
       tech: [
         'ASP.NET Core',
-        'C#',
-        'Angular 21',
-        'TypeScript',
+        'Angular',
         'PostgreSQL',
         'pgvector',
         'Groq',
@@ -27,7 +25,6 @@ export default function Projects() {
         'Neon',
         'Render',
         'Vercel',
-        'GitHub Actions',
       ],
       github: 'https://github.com/Sumanth-cs19/ai-knowledge-assistant',
       live: 'https://ai-knowledge-assistant-seven.vercel.app/',

@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { AiOutlineMail, AiOutlinePhone, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import { FiSend, FiCheck } from 'react-icons/fi';
+import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
+import { FiSend, FiCheck, FiGlobe } from 'react-icons/fi';
 
 export default function Contact() {
   const config = {
     email: 'sumanthk458@gmail.com',
-    phone: '+91-8688559912',
     github: 'https://github.com/Sumanth-cs19',
     linkedin: 'https://www.linkedin.com/in/konduru-sumanth-varma-320a5b1bb/',
+    portfolio: 'https://konduruportfolio.vercel.app/',
   };
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -50,7 +50,7 @@ export default function Contact() {
 
   const contactCards = [
     { href: `mailto:${config.email}`, icon: AiOutlineMail, label: 'Email', value: config.email, external: false },
-    { href: `tel:${config.phone}`, icon: AiOutlinePhone, label: 'Phone', value: config.phone, external: false },
+    { href: config.portfolio, icon: FiGlobe, label: 'Portfolio', value: 'konduruportfolio.vercel.app', external: true },
     { href: config.github, icon: AiOutlineGithub, label: 'GitHub', value: 'Sumanth-cs19', external: true },
     { href: config.linkedin, icon: AiOutlineLinkedin, label: 'LinkedIn', value: 'Konduru Sumanth Varma', external: true },
   ];

@@ -68,13 +68,13 @@ export default function Hero() {
           >
             <TypeAnimation
               sequence={[
-                'Software Development Engineer II',
+                'Software Engineer',
                 2500,
-                'Full Stack .NET Developer',
+                'ASP.NET Core | GenAI | Cloud',
                 2500,
-                'Microservices Architect',
+                'Software Engineer',
                 2500,
-                'Cloud & Azure Enthusiast',
+                'ASP.NET Core | GenAI | Cloud',
                 2500,
               ]}
               wrapper="h2"
@@ -92,14 +92,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.65 }}
           >
-            Full Stack .NET Developer with 2 years of experience building scalable web
-            applications using{' '}
-            <span style={{ color: 'var(--accent)' }}>.NET Core</span>,{' '}
+            Software Engineer with around 3 years of experience building scalable backend
+            systems, secure enterprise APIs, and AI-powered applications using{' '}
+            <span style={{ color: 'var(--accent)' }}>ASP.NET Core</span>,{' '}
             <span style={{ color: 'var(--accent)' }}>C#</span>, and{' '}
-            <span style={{ color: 'var(--accent)' }}>Oracle</span>. Specialized in{' '}
-            <span style={{ color: 'var(--accent-secondary)' }}>microservices</span>,
-            performance optimization, and{' '}
-            <span style={{ color: 'var(--accent-secondary)' }}>Azure</span> cloud.
+            <span style={{ color: 'var(--accent)' }}>Angular</span>. Specialized in{' '}
+            <span style={{ color: 'var(--accent-secondary)' }}>PostgreSQL</span>,
+            Azure, and modern cloud technologies.
           </motion.p>
 
           {/* CTA Buttons */}
